@@ -1,21 +1,21 @@
 # make basic directory structure for programs
-mkdir -p /opt/apps/bin
-mkdir -p /opt/apps/share
+sudo mkdir -p /opt/apps/bin
+sudo mkdir -p /opt/apps/share
 
 # basic server programs
-apt-get -y install gparted
-apt-get -y install vim-athena
-apt-get -y install openssh-server
-apt-get -y install git
+sudo apt-get -y install gparted
+sudo apt-get -y install vim-athena
+sudo apt-get -y install openssh-server
+sudo apt-get -y install git
 
 # basic packages
-apt-get -y install zlib1g-dev
-apt-get -y install parallel
-apt-get -y install libncurses5-dev
-apt-get -y install libbz2-dev
-apt-get -y install liblzma-dev
-apt-get -y install openjdk-8-jre
-apt-get -y install openjdk-8-jdk
+sudo apt-get -y install zlib1g-dev
+sudo apt-get -y install parallel
+sudo apt-get -y install libncurses5-dev
+sudo apt-get -y install libbz2-dev
+sudo apt-get -y install liblzma-dev
+sudo apt-get -y install openjdk-8-jre
+sudo apt-get -y install openjdk-8-jdk
 
 # TODO: Make sure that partions are correctly set up.
 # use a combination of gparted (from boot disk boot) and disks to format and make partions
