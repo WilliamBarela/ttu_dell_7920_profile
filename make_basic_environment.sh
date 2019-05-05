@@ -23,19 +23,19 @@ sudo apt-get -y install openjdk-8-jdk
 # to check for uuids, use 'ls -hal /dev/disks/by-uuid and make corrects in /etc/fstab
 
 # set the time to the TTU ntp server:
-timedatectl set-ntp no
-apt-get install ntp
+sudo timedatectl set-ntp no
+sudo apt-get install ntp
 # add TTU ntp server entry (pool ntp.ttu.edu) to 'sudo vim /etc/ntp.conf'
 # be sure to comment out the default pooled ntp servers from ubuntu, else it will not work
-service ntp stop
-ntpd -gq
-service ntp start
+sudo service ntp stop
+sudo ntpd -gq
+sudo service ntp start
 
 # TODO: Install Anaconda. First download the version of Python you need.
 # get installer from anaconda's website.
 # make shell file executable 'sudo chmod +x ./Ananconda_installer_xxx.sh
 
-mkdir /opt/apps/anaconda
+sudo mkdir /opt/apps/anaconda
 
 # TODO: run anaconda installer and set the following path for anaconda.
 # Accept to initialize anaconda in the bashrc
